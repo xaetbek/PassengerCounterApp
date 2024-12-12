@@ -1,18 +1,46 @@
-//document.getElementById("count-el").innerText = 5
+//function increment() {
+//  console.log("The button was clicked")
+//}
+//
+//function log() {
+//  console.log(42)
+//
+//}
+//
+//log()
+//
+//let lap1 = 34
+//let lap2 = 33
+//let lap3 = 36
+//
+//function sum() {
+//  let totalLapTime = lap1 + lap2 + lap3
+//  console.log(totalLapTime)
+//}
 
-// let myAge = 27
-// let humanDogRatio = 7
-// let myDogAge = myAge * humanDogRatio
+//sum()
 
-// console.log(myDogAge)
+//let lapsCompleted = 0
+//
+//function addLaps() {
+//  lapsCompleted = lapsCompleted + 1
+//}
+//
+//addLaps()
+//addLaps()
+//addLaps()
+//
+//console.log(lapsCompleted)
 
+let count = 0
 
-let bonusPoints = 50 
-bonusPoints = bonusPoints + 50
-bonusPoints = bonusPoints - 25
-bonusPoints = bonusPoints + 70
+function increment() {
+  count = count + 1
+  document.getElementById("increment-btn").console.log(count)
+}
 
-console.log(bonusPoints)
+const button = document.querySelector("button");
 
-
-
+button.addEventListener("click", (event) => {
+  button.textContent = `INCREMENT ${event.detail}`;
+});
